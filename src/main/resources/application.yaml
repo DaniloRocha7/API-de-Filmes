@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: moviefliex
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/moviefliex
+    username: moviefliex
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+  flyway:
+    enabled: true
+
+moviefliex:
+  security:
+    secret: "123456"
